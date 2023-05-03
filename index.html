@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sale Item Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  padding: 0 10px;
+  width:50%;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1400px) {
+  .column {
+    margin-bottom: 20px;
+  }
+  .content {
+  	transform: translate(0, -50%)!important;
+  	color:white!important;
+    background:-moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(0, 0, 0, 0.3) 50%, rgba(255, 255, 255, 0) 100%)!important; 
+    background:-webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(0, 0, 0, 0.3) 50%, rgba(255, 255, 255, 0) 100%)!important;
+    background:-o-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(0, 0, 0, 0.3) 50%, rgba(255, 255, 255, 0) 100%)!important;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(0, 0, 0, 0.3) 50%, rgba(255, 255, 255, 0) 100%)!important;
+    width: 100%;
+  }
+  
+  .backgroundwall{
+    height:100%;
+	width:100%;
+  }
+  
+  .details{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .details_link{
+    color: white!important;
+    border-bottom: 1px solid white !important;
+  }
+}
+
+.content {
+  padding:2em;
+  overflow-x:clip;
+  overflow-y:overlay;
+}
+
+.saleitem{
+	min-width:13em;
+	min-height:30em;
+  border: none;
+}
+
+.backgroundwall {
+	background-image:url("./bg.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	
+	min-width: 633px;
+	min-height: 760px;
+}
+
+.saleitems{
+  overflow-x:clip;
+  overflow-y:overlay;
+  color: black;
+}
+
+.saleitem .card-text {
+	line-height: 1em;
+}
+
+.details {
+	color:#808080;
+}
+
+.details_link{
+	text-decoration: none;
+	font-weight: bold;;
+	color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.3em;
+}
+
+.colorselect {
+	display: inline-block;
+	width:1em;
+	height:1em;
+	border:1px solid #00000050;
+	border-radius: 50%;
+	opacity: 0.7;
+}
+
+.colorselect.selected {
+	border:2px solid #00000050;
+	opacity: 1;
+}
+
+</style>
+<script>
+$(document).ready(function(){
+$('.colorselect').on('click',function(){
+  $(".colorselect").removeClass('selected');
+  $(this).addClass('selected');
+console.log("clicked");
+});
+console.log("active");
+});
+
+</script>
+</head>
+<body>
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-6 backgroundwall">
+        &nbsp;
+      </div>
+      <div class="col-lg-6 content">
+        <h2 class="mb-4"><b>Everyday items, we have something to suit every occasion</b></h2>
+        <span class="details" style="color:#808080">At suspendisse augue lectus arcu, accumsan ut sit posuere vitae sit tincidunt semper eu proin leo gravida cursus</span>
+        
+        <br/>
+        <br/>
+        <a class="details_link" href="#">Shop All Everyday Items</a>
+        <br/>
+        <br/>
+        <div class="d-flex flex-row flex-nowrap saleitems">
+        
+        
+			<div class="card card-block mx-2 saleitem">
+				<img class="card-img-top" src="./item-0.png" alt="Card image" style="width:100%">
+				<div class="card-body">
+					<br class="card-text">
+						Organic Skinny High
+						<br/>
+						Waist Raw Hem Jeans
+						<br/>
+						<strong>€33.95</strong>
+						<div class="list-unstyled">
+							
+							
+							<div class="mb-1 colorselect selected" style="background-color:#99c3ff">&nbsp;</div>
+							<div class="mb-1 colorselect" style="background-color:#ff9999">&nbsp;</div>
+							<div class="mb-1 colorselect" style="background-color:#cb99ff">&nbsp;</div>
+							<div class="mb-1 colorselect" style="background-color:#ffd9b2">&nbsp;</div>
+						
+						
+						</div>
+						
+						
+						
+					</p>
+				  </div>
+			  </div>
+			  
+			  
+			<div class="card card-block mx-2 saleitem">
+				<img class="card-img-top" src="./item-1.png" alt="Card image" style="width:100%">
+				<div class="card-body">
+					<br class="card-text">
+						Organic Skinny High
+						<br/>
+						Waist Raw Hem Jeans
+						<br/>
+						<strong>€33.95</strong>
+						<div class="list-unstyled">
+							
+							
+							<div class="mb-1 colorselect selected" style="background-color:#99c3ff">&nbsp;</div>
+							<div class="mb-1 colorselect" style="background-color:#ff9999">&nbsp;</div>
+							<div class="mb-1 colorselect" style="background-color:#cb99ff">&nbsp;</div>
+							<div class="mb-1 colorselect" style="background-color:#ffd9b2">&nbsp;</div>
+						
+						
+						</div>
+						
+						
+						
+					</p>
+				  </div>
+			  </div>
+			  
+			  
+			<div class="card card-block mx-2 saleitem">
+				<img class="card-img-top" src="./item-2.png" alt="Card image" style="width:100%">
+				<div class="card-body">
+					<br class="card-text">
+						Organic Skinny High
+						<br/>
+						Waist Raw Hem Jeans
+						<br/>
+						<strong>€33.95</strong>
+						<div class="list-unstyled">
+							
+							
+							<div class="mb-1 colorselect selected" style="background-color:#99c3ff">&nbsp;</div>
+							<div class="mb-1 colorselect" style="background-color:#ff9999">&nbsp;</div>
+							<div class="mb-1 colorselect" style="background-color:#cb99ff">&nbsp;</div>
+							<div class="mb-1 colorselect" style="background-color:#ffd9b2">&nbsp;</div>
+						
+						
+						</div>
+						
+						
+						
+					</p>
+				  </div>
+			  </div>
+          
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
